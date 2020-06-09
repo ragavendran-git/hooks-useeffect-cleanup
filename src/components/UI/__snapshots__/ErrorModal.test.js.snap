@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render correctly 1`] = `
+<Fragment>
+  <div
+    className="backdrop"
+  />
+  <div
+    className="error-modal"
+  >
+    <h2>
+      An Error Occurred!
+    </h2>
+    <p />
+    <div
+      className="error-modal__actions"
+    >
+      <button
+        type="button"
+      >
+        Okay
+      </button>
+    </div>
+  </div>
+</Fragment>
+`;
