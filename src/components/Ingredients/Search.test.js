@@ -12,6 +12,10 @@ configure({ adapter: new Adapter() });
 // const useStateSpy = jest.spyOn(React, 'useState')
 // useStateSpy.mockImplementation((init) => [init , setState]);
 
-test('Should call addIngredientHandler function', () => {
-    
+test('Should call onLoadIngredients function', () => {
+    const wrapper = mount(<Search/>);
+
+    wrapper.find("input").simulate("change", {
+        target: { value: "Ingredient 1" },
+    });
 });

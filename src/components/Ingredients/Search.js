@@ -9,6 +9,7 @@ const Search = React.memo(props => {
   const inputRef = useRef();
 
   useEffect(() => {
+    console.log('useeffect::');
     const timer = setTimeout(() => {
       if (enteredFilter === inputRef.current.value) {
         const query =

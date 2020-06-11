@@ -22,7 +22,7 @@ it("Should display list items", () => {
     ];
     const wrapper = mount(<IngredientList ingredients={userIngredients} onRemoveItem={removeIngredientHandler}/>);
     expect(wrapper.find("li")).toHaveLength(2);
-
+    
     wrapper.find("li").first().simulate("click");
     expect(removeIngredientHandler).toHaveBeenCalled();
 });
